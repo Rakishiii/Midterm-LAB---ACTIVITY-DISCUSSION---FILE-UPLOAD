@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href ="style/style.css">
+<title>Form</title>
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<form action='http://127.0.0.1:3000/process_post' method='post'>
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name">
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name">
+
+    <div class="gender-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+
+    <label for="stud_num">Student #:</label>
+    <input type="text" id="stud_num" name="stud_num">
+
+    <label for="cell_num">Cellphone #:</label>
+    <input type="text" id="cell_num" name="cell_num">
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
